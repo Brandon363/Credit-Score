@@ -23,7 +23,7 @@ selected_menu = option_menu(
         orientation = "horizontal"
 )
 
-#@st.cache
+
 #Load data
 def load_data(dataset):
     df = pd.read_csv(dataset)
@@ -291,8 +291,7 @@ elif selected_menu == "About The Developer":
 
     with col1:
         st.header("Brandon Mutombwa")
-        bran_pic = load_img("my_pic/brandon_pic.jpg", target_size=(300, 350))
-        st.image(bran_pic, caption = "Tonderai Brandon Mutombwa")
+        st.image("my_pic/brandon_pic.jpg", caption = "Tonderai Brandon Mutombwa")
         
     with col2:
         st.write(" ")
