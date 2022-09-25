@@ -279,6 +279,10 @@ if selected_menu == "Home":
 
             if st.checkbox("Show Current Credit Status"):
                 st.dataframe(pivot_table)
+            
+            if st.checkbox("Show Added data"):
+                new_entries = pd.read_csv("data/New_entry_Data.csv")
+                st.dataframe(new_entries)
 
 
 #-------------------------------------PAGE 2 ----------------------------------------------------
