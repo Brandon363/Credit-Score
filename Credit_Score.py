@@ -157,7 +157,7 @@ if selected_menu == "Home":
         #-------------------------------------Admin page ----------------------------------------------------
         if nav == "Admin":
 
-            dfx_og =  pd.read_csv(r"data\data.csv", index_col=0)
+            dfx_og =  pd.read_csv(r"data/data.csv", index_col=0)
 
             #for EDA
             column_obj = [dt for dt in data.columns if data[dt].dtype == "O" ]
