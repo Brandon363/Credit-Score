@@ -48,12 +48,12 @@ def get_key(val, my_dict):
 
 data = load_data("data/german_credit_data_3.csv")
 
-#model = joblib.load('files/My_model')
-model = XGBClassifier(learning_rate = 0.1,
-                             max_depth= 3,
-                             min_samples_split= 0.1,
-                            n_estimators = 100,
-                             subsample= 0.9).fit(X,y)
+model = joblib.load('files/My_model')
+# model = XGBClassifier(learning_rate = 0.1,
+#                              max_depth= 3,
+#                              min_samples_split= 0.1,
+#                             n_estimators = 100,
+#                              subsample= 0.9).fit(X,y)
   
 
 Sex_label     = {'male': 1, 'female': 0}
