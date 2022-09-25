@@ -2,8 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-#from xgboost import XGBClassifier
-from xgboost import XGBModel
+from xgboost import XGBClassifier
+import sklearn
+#from xgboost import XGBModel
 
 
 import matplotlib.pyplot as plt
